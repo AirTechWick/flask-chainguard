@@ -1,0 +1,12 @@
+'''import climage module to display images on terminal'''
+from climage import convert
+from flask import Flask
+
+helloworld = Flask(__name__)
+@helloworld.route("/")
+def run():
+    return "{\"message\":\"Hey there python!\"}"
+
+if __name__ == "__main__":
+    helloworld.run(host="0.0.0.0", port=int("4000"))
+
