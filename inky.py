@@ -1,5 +1,3 @@
-'''import climage module to display images on terminal'''
-from climage import convert
 from flask import Flask
 
 helloworld = Flask(__name__)

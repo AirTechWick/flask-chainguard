@@ -11,7 +11,7 @@ RUN python -m venv /inky/venv
 COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
-EXPOSE 3000
+EXPOSE 4000
 FROM cgr.dev/chainguard/python:latest
 
 WORKDIR /inky
